@@ -1,0 +1,162 @@
+body{
+	margin: 0px 70px 0px 70px;  
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 2px;
+	background-color: #f4f4f4;
+}
+.container{
+	width: 80%;
+	margin: auto;  
+
+}
+header{
+	background-color: #35424a;
+	color: #ffffff;
+	min-height: 90px;
+	border-bottom: #e8491d 3px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header a{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+}
+header ul{
+	margin: 0;
+	padding: 0;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float: left;
+}
+header #branding h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+#showcase{
+	min-height: 400px;
+	background:url("../images/chess.jpg") no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	text-align: center;
+	color: #ffffff;
+}
+#showcase h1{
+	margin-top: 7px;
+	margin-bottom: 0px;
+	font-size: 50px;
+}
+#showcase p{
+	font-size: 20px;
+}
+#newsletter{
+	padding: 15px;
+	color: #ffffff;
+	background: #35424a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 4px solid #e8491d;
+}
+#newsletter h1{
+	float: left;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes example{
+	0% {color :white}
+	25% {color: orange}
+	50% {color: yellow}
+	75% {color: red}
+	100% {color: violet}
+}
+#newsletter form{
+	float: right;
+	margin-top: 20px;
+}
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+button{
+	height: 38px;
+	background: #e8491d;
+	border:0;
+	padding: 0 20px 0 20px;
+	color: #ffffff;
+}
+#boxes{
+	margin-top: 20px;
+}
+#boxes .box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+/*aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+article#main-col{
+	float: left;
+	width: 65%; */
+footer{
+	float: left;
+	padding: 10px 0 10px 0;
+	color: #ffffff;
+	background-color: #e8491d;
+	width: 100%;
+	text-align: center;
+}
+@media (max-width: 750px) {
+	#boxes .box{
+		float: none;
+		width: 100%
+	}
+	header li{
+		float: none;
+		padding: 0 10px 0 10px;
+	}
+	#newsletter button, input{
+		width: 100%;
+		text-align: center;
+	}
+	#showcase h1{
+		font-size: 20px;
+	}
+	#showcase p{
+		font-size: 18px;
+	}
+}
+header li{
+		float: none;
+		padding: 0 10px 0 10px;
+	}
+	#log{
+		font-size: 23px;
+	}
+	header a{
+	font-size: 14px;
+}
